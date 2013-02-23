@@ -52,7 +52,7 @@
     function exportFunctions () {
         if (typeof define === 'function' && define.amd) {
             define(['css-time'], functions);
-        } else if (typeof module === 'object' || module !== null) {
+        } else if (typeof module === 'object' && module !== null) {
             module.exports = functions;
         } else {
             window.cssTime = functions;

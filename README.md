@@ -112,4 +112,3 @@ You can run them with the command `npm test` or `jake test`.
 [mocha]: http://visionmedia.github.com/mocha
 [chai]: http://chaijs.com/
 [uglifyjs]: https://github.com/mishoo/UglifyJS
-

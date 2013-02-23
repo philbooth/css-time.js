@@ -1,5 +1,8 @@
 /*globals define, module, window, setTimeout */
 
+// This module contains functions for converting milliseconds
+// to and from CSS time strings.
+
 (function () {
     'use strict';
 
@@ -10,6 +13,10 @@
 
     exportFunctions();
 
+    // Public function `from`.
+    //
+    // Returns the number of milliseconds represented by a
+    // CSS time string.
     function from (cssTime) {
         verifyCssTime(cssTime);
 
@@ -26,6 +33,10 @@
         }
     }
 
+    // Public function `to`.
+    //
+    // Returns a CSS time string representing the number
+    // of milliseconds passed in the arguments.
     function to (milliseconds) {
         verifyMilliseconds(milliseconds);
 

@@ -3,7 +3,7 @@
 [![Build status][ci-image]][ci-status]
 
 A tiny JavaScript library
-for converting milliseconds
+that converts milliseconds
 to and from [CSS time][csstime].
 
 ## Installation

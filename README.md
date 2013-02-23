@@ -49,6 +49,38 @@ require('css-time', function (cssTime) {
 <script type="text/javascript" src="css-time.min.js"></script>
 ```
 
+### Calling the exported functions
+
+Two functions are exported, `from` and `to`.
+
+#### `function from (cssTime)`
+
+Returns the number of milliseconds
+represented by the CSS time string
+passed in the argument.
+
+##### Examples
+
+```
+cssTime.from('500ms'); // returns 500
+
+cssTime.from('-1.5s'); // returns -1500
+```
+
+#### `function to (milliseconds)`
+
+Returns a CSS time string
+representing the number of milliseconds
+passed in the argument.
+
+##### Examples
+
+```
+cssTime.to(500); // returns '500ms'
+
+cssTime.to(-0.5); // returns '-0.5ms'
+```
+
 ## Development
 
 ### Dependencies

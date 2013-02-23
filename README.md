@@ -46,7 +46,7 @@ require('css-time', function (cssTime) {
 #### Globally
 
 ```
-<script type="text/javascript" src="css-time.min.js"></script>
+<script src="css-time.min.js"></script>
 ```
 
 ### Calling the exported functions

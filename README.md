@@ -53,7 +53,7 @@ require('css-time', function (cssTime) {
 
 Two functions are exported, `from` and `to`.
 
-#### `function from (cssTime)`
+#### `function from (string)`
 
 Returns the number of milliseconds
 represented by the CSS time string
@@ -67,7 +67,7 @@ cssTime.from('500ms'); // returns 500
 cssTime.from('-1.5s'); // returns -1500
 ```
 
-#### `function to (milliseconds)`
+#### `function to (number)`
 
 Returns a CSS time string
 representing the number of milliseconds

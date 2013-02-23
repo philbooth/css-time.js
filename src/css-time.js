@@ -4,23 +4,11 @@
     'use strict';
 
     var functions = {
-        to: to,
-        from: from
+        from: from,
+        to: to
     };
 
     exportFunctions();
-
-    function to (milliseconds) {
-        verifyMilliseconds(milliseconds);
-
-        return milliseconds + 'ms';
-    }
-
-    function verifyMilliseconds (milliseconds) {
-        if (typeof milliseconds !== 'number' || isNaN(milliseconds)) {
-            throw new Error('Invalid milliseconds');
-        }
-    }
 
     function from (cssTime) {
         verifyCssTime(cssTime);
@@ -35,6 +23,18 @@
     function verifyCssTime (cssTime) {
         if (/^[\-\+]?[0-9]+(\.[0-9]+)?m?s$/.test(cssTime) === false) {
             throw new Error('Invalid CSS time');
+        }
+    }
+
+    function to (milliseconds) {
+        verifyMilliseconds(milliseconds);
+
+        return milliseconds + 'ms';
+    }
+
+    function verifyMilliseconds (milliseconds) {
+        if (typeof milliseconds !== 'number' || isNaN(milliseconds)) {
+            throw new Error('Invalid milliseconds');
         }
     }
 

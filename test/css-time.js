@@ -29,30 +29,6 @@
             cssTime = undefined;
         });
 
-        test('to function is exported', function () {
-            assert.isFunction(cssTime.to);
-        });
-
-        test('to returns correct positive value', function () {
-            assert.strictEqual(cssTime.to(500), '500ms');
-        });
-
-        test('to returns correct negative value', function () {
-            assert.strictEqual(cssTime.to(-0.5), '-0.5ms');
-        });
-
-        test('to throws when string is passed', function () {
-            assert.throws(function () {
-                cssTime.to('500');
-            });
-        });
-
-        test('to throws when NaN is passed', function () {
-            assert.throws(function () {
-                cssTime.to(NaN);
-            });
-        });
-
         test('from function is exported', function () {
             assert.isFunction(cssTime.from);
         });
@@ -90,6 +66,30 @@
         test('from throws when bad unit is passed', function () {
             assert.throws(function () {
                 cssTime.from('500m');
+            });
+        });
+
+        test('to function is exported', function () {
+            assert.isFunction(cssTime.to);
+        });
+
+        test('to returns correct positive value', function () {
+            assert.strictEqual(cssTime.to(500), '500ms');
+        });
+
+        test('to returns correct negative value', function () {
+            assert.strictEqual(cssTime.to(-0.5), '-0.5ms');
+        });
+
+        test('to throws when string is passed', function () {
+            assert.throws(function () {
+                cssTime.to('500');
+            });
+        });
+
+        test('to throws when NaN is passed', function () {
+            assert.throws(function () {
+                cssTime.to(NaN);
             });
         });
     });

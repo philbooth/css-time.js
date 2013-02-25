@@ -22,6 +22,10 @@
     function from (cssTime) {
         var matches = regex.exec(cssTime);
 
+        if (matches === null) {
+            throw new Error('Invalid CSS time');
+        }
+
         return parseFloat(matches[1]) * (matches[3] === 's' ? 1000 : 1);
     }
 

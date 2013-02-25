@@ -1,6 +1,6 @@
 {
     "name": "css-time",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "author": "Phil Booth <pmbooth@gmail.com>",
     "description": "A tiny library that converts milliseconds to and from CSS time.",
     "contributors": [
@@ -14,6 +14,7 @@
     "keywords": [
         "css",
         "time",
+        "milliseconds",
         "conversion",
         "convert"
     ],

@@ -56,8 +56,7 @@ Two functions are exported, `from` and `to`.
 #### function from (string)
 
 Returns the number of milliseconds
-represented by the CSS time string
-passed in the argument.
+represented by a CSS time string.
 
 ##### Examples
 

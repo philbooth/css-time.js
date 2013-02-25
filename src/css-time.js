@@ -1,4 +1,4 @@
-/*globals define, module, window, setTimeout */
+/*globals define, module, window */
 
 // This module contains functions for converting milliseconds
 // to and from CSS time strings.

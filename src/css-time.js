@@ -6,7 +6,9 @@
 (function () {
     'use strict';
 
-    var functions = {
+    var regex = /^([\-\+]?[0-9]+(\.[0-9]+)?)(m?s)$/,
+
+    functions = {
         from: from,
         to: to
     };
@@ -18,19 +20,9 @@
     // Returns the number of milliseconds represented by a
     // CSS time string.
     function from (cssTime) {
-        verifyCssTime(cssTime);
+        var matches = regex.exec(cssTime);
 
-        if (cssTime.charAt(cssTime.length - 2) === 'm') {
-            return parseFloat(cssTime.substring(0, cssTime.length - 2));
-        }
-
-        return parseFloat(cssTime.substring(0, cssTime.length - 1)) * 1000;
-    }
-
-    function verifyCssTime (cssTime) {
-        if (/^[\-\+]?[0-9]+(\.[0-9]+)?m?s$/.test(cssTime) === false) {
-            throw new Error('Invalid CSS time');
-        }
+        return parseFloat(matches[1]) * (matches[3] === 's' ? 1000 : 1);
     }
 
     // Public function `to`.
@@ -38,15 +30,11 @@
     // Returns a CSS time string representing the number
     // of milliseconds passed in the arguments.
     function to (milliseconds) {
-        verifyMilliseconds(milliseconds);
-
-        return milliseconds + 'ms';
-    }
-
-    function verifyMilliseconds (milliseconds) {
         if (typeof milliseconds !== 'number' || isNaN(milliseconds)) {
             throw new Error('Invalid milliseconds');
         }
+
+        return milliseconds + 'ms';
     }
 
     function exportFunctions () {

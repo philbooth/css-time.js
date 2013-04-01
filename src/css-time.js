@@ -43,7 +43,9 @@
 
     function exportFunctions () {
         if (typeof define === 'function' && define.amd) {
-            define(['css-time'], functions);
+            define(function () {
+                return functions;
+            });
         } else if (typeof module === 'object' && module !== null) {
             module.exports = functions;
         } else {

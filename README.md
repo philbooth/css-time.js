@@ -30,24 +30,16 @@ git clone git@github.com:philbooth/css-time.js.git
 
 ### Loading the library
 
-#### Via CommonJS
-
-```
-var cssTime = require('css-time');
-```
-
-#### Via AMD
-
-```
-require('css-time', function (cssTime) {
-});
-```
-
-#### Globally
-
-```
-<script src="css-time.min.js"></script>
-```
+Both
+CommonJS
+(e.g. if you're using [Browserify])
+and AMD
+(e.g. if you're using [Require.js][require])
+loading styles are supported.
+If neither system is detected,
+the library defaults to
+exporting it's interface globally
+as `cssTime`.
 
 ### Calling the exported functions
 

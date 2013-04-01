@@ -7,6 +7,9 @@
         { "name": "Phil Booth", "email": "pmbooth@gmail.com" }
     ],
     "main": "./src/css-time",
+    "jam": {
+        "main": "./src/css-time.js"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/philbooth/css-time.js"

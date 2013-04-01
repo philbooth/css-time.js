@@ -96,6 +96,8 @@ You can run them with the command `npm test` or `jake test`.
 [ci-image]: https://secure.travis-ci.org/philbooth/css-time.js.png
 [ci-status]: http://travis-ci.org/#!/philbooth/css-time.js
 [csstime]: http://www.w3.org/TR/css3-values/#time
+[browserify]: http://browserify.org/
+[require]: http://requirejs.org/
 [node]: http://nodejs.org/
 [npm]: https://npmjs.org/
 [jake]: https://github.com/mde/jake
@@ -103,3 +105,4 @@ You can run them with the command `npm test` or `jake test`.
 [mocha]: http://visionmedia.github.com/mocha
 [chai]: http://chaijs.com/
 [uglifyjs]: https://github.com/mishoo/UglifyJS
+

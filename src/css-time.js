@@ -1,9 +1,9 @@
-/*globals define, module, window */
+/*globals define, module */
 
 // This module contains functions for converting milliseconds
 // to and from CSS time strings.
 
-(function () {
+(function (globals) {
     'use strict';
 
     var regex = /^([\-\+]?[0-9]+(\.[0-9]+)?)(m?s)$/,
@@ -49,8 +49,8 @@
         } else if (typeof module === 'object' && module !== null) {
             module.exports = functions;
         } else {
-            window.cssTime = functions;
+            globals.cssTime = functions;
         }
     }
-}());
+}(this));
 

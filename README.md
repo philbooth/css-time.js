@@ -92,6 +92,8 @@ install all of the dependencies as listed in `package.json`.
 
 The unit tests are in `test/css-time.js`.
 You can run them with the command `npm test` or `jake test`.
+To run the tests in a web browser,
+open `test/css-time.html`.
 
 [ci-image]: https://secure.travis-ci.org/philbooth/css-time.js.png
 [ci-status]: http://travis-ci.org/#!/philbooth/css-time.js

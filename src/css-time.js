@@ -46,7 +46,7 @@
             define(function () {
                 return functions;
             });
-        } else if (typeof module === 'object' && module !== null) {
+        } else if (typeof module !== 'undefined' && module !== null) {
             module.exports = functions;
         } else {
             globals.cssTime = functions;

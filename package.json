@@ -1,18 +1,18 @@
 {
     "name": "css-time",
     "version": "0.1.8",
-    "author": "Phil Booth <pmbooth@gmail.com>",
     "description": "A tiny library that converts milliseconds to and from CSS time.",
-    "contributors": [
-        { "name": "Phil Booth", "email": "pmbooth@gmail.com" }
-    ],
+    "homepage": "https://github.com/philbooth/css-time.js",
+    "bugs": "https://github.com/philbooth/css-time.js/issues",
+    "license": "MIT",
+    "author": "Phil Booth <pmbooth@gmail.com> (https://github.com/philbooth)",
     "main": "./src/css-time",
     "jam": {
         "main": "./src/css-time.js"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/philbooth/css-time.js"
+        "url": "https://github.com/philbooth/css-time.js.git"
     },
     "keywords": [
         "css",
@@ -28,7 +28,6 @@
         "chai": "1.5.x",
         "uglify-js": "2.2.x"
     },
-    "license": "MIT",
     "scripts": {
         "test": "jake test"
     }

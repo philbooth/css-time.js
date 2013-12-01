@@ -1,19 +1,9 @@
 {
     "name": "css-time",
     "version": "0.1.8",
-    "author": "Phil Booth <pmbooth@gmail.com>",
     "description": "A tiny library that converts milliseconds to and from CSS time.",
-    "contributors": [
-        { "name": "Phil Booth", "email": "pmbooth@gmail.com" }
-    ],
-    "main": "src/css-time.min.js",
-    "scripts": [
-        "src/css-time.min.js"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/philbooth/css-time.js"
-    },
+    "repo": "philbooth/css-time.js",
+    "license": "MIT",
     "keywords": [
         "css",
         "time",
@@ -21,6 +11,8 @@
         "conversion",
         "convert"
     ],
-    "license": "MIT"
+    "scripts": [
+        "src/css-time.min.js"
+    ]
 }
 

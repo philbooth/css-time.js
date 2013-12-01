@@ -1,0 +1,15 @@
+{
+    "name": "css-time",
+    "version": "0.1.8",
+    "main": "src/css-time.min.js",
+    "ignore": [
+        "AUTHORS",
+        "component.json",
+        "config",
+        "node_modules",
+        "package.json",
+        "README.md",
+        "test"
+    ]
+}
+

@@ -29,7 +29,7 @@
     },
     "scripts": {
         "lint": "./node_modules/.bin/jshint ./src/css-time.js --config config/jshint.json",
-        "test": "./node_modules/.bin/mocha --ui tdd --reporter spec --compilers coffee:coffee-script --colors ./test/css-time.js",
+        "test": "./node_modules/.bin/mocha --ui tdd --reporter spec --colors ./test/css-time.js",
         "minify": "./node_modules/.bin/uglifyjs ./src/css-time.js --compress --mangle --output ./src/css-time.min.js"
     }
 }

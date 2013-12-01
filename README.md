@@ -8,19 +8,33 @@ to and from [CSS time][csstime].
 
 ## Installation
 
-### Via NPM
+You can install trier.js
+with one of
+the package managers:
+[NPM];
+[Jam];
+[Bower];
+or [Component].
+The package name
+for the first three
+is `css-time`
+and for Component
+it's `philbooth/css-time.js`:
 
 ```
 npm install css-time
-```
 
-### Via Jam
-
-```
 jam install css-time
+
+bower install css-time
+
+component install philbooth/css-time.js
 ```
 
-### Via Git
+Alternatively,
+you can just clone
+the git repository
+from GitHub:
 
 ```
 git clone git@github.com:philbooth/css-time.js.git
@@ -98,10 +112,13 @@ open `test/css-time.html`.
 [ci-image]: https://secure.travis-ci.org/philbooth/css-time.js.png
 [ci-status]: http://travis-ci.org/#!/philbooth/css-time.js
 [csstime]: http://www.w3.org/TR/css3-values/#time
+[npm]: https://npmjs.org/
+[jam]: http://jamjs.org/
+[component]: http://component.io/
+[bower]: http://bower.io/
 [browserify]: http://browserify.org/
 [require]: http://requirejs.org/
 [node]: http://nodejs.org/
-[npm]: https://npmjs.org/
 [jake]: https://github.com/mde/jake
 [jshint]: https://github.com/jshint/node-jshint
 [mocha]: http://visionmedia.github.com/mocha

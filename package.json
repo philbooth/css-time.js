@@ -22,14 +22,15 @@
         "convert"
     ],
     "devDependencies": {
-        "jake": "0.5.x",
-        "jshint": "1.0.x",
-        "mocha": "1.8.x",
-        "chai": "1.5.x",
-        "uglify-js": "2.2.x"
+        "jshint": "2.3.x",
+        "mocha": "1.14.x",
+        "chai": "1.8.x",
+        "uglify-js": "2.4.x"
     },
     "scripts": {
-        "test": "jake test"
+        "lint": "./node_modules/.bin/jshint ./src/css-time.js --config config/jshint.json",
+        "test": "./node_modules/.bin/mocha --ui tdd --reporter spec --compilers coffee:coffee-script --colors ./test/css-time.js",
+        "minify": "./node_modules/.bin/uglifyjs ./src/css-time.js --compress --mangle --output ./src/css-time.min.js"
     }
 }
 

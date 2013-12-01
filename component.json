@@ -1,6 +1,6 @@
 {
     "name": "css-time",
-    "version": "0.1.10",
+    "version": "0.1.11",
     "description": "A tiny library that converts milliseconds to and from CSS time.",
     "repo": "philbooth/css-time.js",
     "license": "MIT",

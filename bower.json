@@ -1,6 +1,6 @@
 {
     "name": "css-time",
-    "version": "0.1.10",
+    "version": "0.1.11",
     "main": "src/css-time.min.js",
     "ignore": [
         "AUTHORS",

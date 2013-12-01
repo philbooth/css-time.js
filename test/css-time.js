@@ -1,10 +1,17 @@
-/*globals require */
+/*globals require, chai */
 
-(function () {
+(function (require) {
     'use strict';
 
-    var assert = require('chai').assert,
+    var assert, path;
+
+    if (typeof require === 'undefined') {
+        assert = chai.assert;
+        require = function () { return cssTime; };
+    } else {
+        assert = require('chai').assert;
         path = '../src/css-time';
+    }
 
     suite('no setup:', function () {
         test('require does not throw', function () {
@@ -93,5 +100,5 @@
             });
         });
     });
-}());
+}(typeof require === 'function' ? require : undefined));
 

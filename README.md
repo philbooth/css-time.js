@@ -8,7 +8,7 @@ to and from [CSS time][csstime].
 
 ## Installation
 
-You can install trier.js
+You can install css-time.js
 with one of
 the package managers:
 [NPM];

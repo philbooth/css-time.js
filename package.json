@@ -1,6 +1,6 @@
 {
     "name": "css-time",
-    "version": "0.1.11",
+    "version": "0.1.12",
     "description": "A tiny library that converts milliseconds to and from CSS time.",
     "homepage": "https://github.com/philbooth/css-time.js",
     "bugs": "https://github.com/philbooth/css-time.js/issues",
@@ -22,15 +22,15 @@
         "convert"
     ],
     "devDependencies": {
-        "jshint": "2.3.x",
-        "mocha": "1.14.x",
-        "chai": "1.8.x",
-        "uglify-js": "2.4.x"
+        "jshint": "~2.7",
+        "mocha": "~2.2",
+        "chai": "~2.3",
+        "uglify-js": "~2.4"
     },
     "scripts": {
-        "lint": "./node_modules/.bin/jshint ./src/css-time.js --config config/jshint.json",
-        "test": "./node_modules/.bin/mocha --ui tdd --reporter spec --colors ./test/css-time.js",
-        "minify": "./node_modules/.bin/uglifyjs ./src/css-time.js --compress --mangle --output ./src/css-time.min.js"
+        "lint": "jshint src/css-time.js",
+        "test": "mocha --ui tdd --reporter spec --colors test/css-time.js",
+        "minify": "uglifyjs src/css-time.js --compress --mangle --output src/css-time.min.js"
     }
 }
 
